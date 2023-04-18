@@ -1,6 +1,6 @@
 
-function App() {
-  return ( <h1>
+const App = () => {
+  return (<h1>
     App.jsx
   </h1>
   )
