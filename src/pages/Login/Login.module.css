@@ -1,0 +1,30 @@
+.login_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ab7e7e89;
+    width: 100%;
+    height: 100vh;
+}
+
+.login_content_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    padding: 10px;
+    background-color: #be282889;
+    border-radius: 5%;
+    border: 1px black solid;
+
+}
+
+.login_content_wrapper *{
+    margin: 10px 5px;
+    border-radius: 5%;
+    height: 25px;
+}
+
+label{
+    margin: 0!important;
+}

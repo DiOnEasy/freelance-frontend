@@ -1,0 +1,7 @@
+.announce_wrapper{
+    border: 1px black solid;
+    width: 50%;
+    border-radius: 5%;
+    margin: 10px 5px;
+    background-color: #4c07f90c;
+}

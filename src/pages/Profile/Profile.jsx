@@ -1,9 +1,8 @@
-const Registration = () => {
+export const Profile = () => {
     return ( <h1>
-    Registration.jsx
+      <img src="/image.png" alt="" />
+    Profile.jsx
     </h1>
     )
   }
-  
-  export default Registration;
-  
+    
