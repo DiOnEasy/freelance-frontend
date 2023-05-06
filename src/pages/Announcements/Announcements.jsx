@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Announce } from '../Announce/Announce';
+import { Announce } from '../../components/Announce/Announce';
 import s from './Annoncements.module.css';
 
 import axios from '../../axios';
@@ -10,6 +10,7 @@ import { fetchAnnouncements } from '../../redux/slices/announcements';
 export const Announcements = () => {
     const dispatch = useDispatch();
     const announcements = useSelector(state => state.announcements.announcements);
+
     console.log(announcements)
 
     const isAnnouncementsLoading = announcements.status === 'loading';

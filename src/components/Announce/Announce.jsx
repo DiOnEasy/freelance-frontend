@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import s from './Announce.module.css'
 
 export const Announce = (props) => {
@@ -6,7 +7,7 @@ export const Announce = (props) => {
       <div className={s.announce_wrapper}>
         <p className={s.announce_title} >{props.title}</p>
         <p announce={s.announce_text} >{props.description}</p>
-        <button>Read more</button>
+        <Link to={`/announce/${props.id}`}>Read more</Link>
       </div>
     </>
   )
