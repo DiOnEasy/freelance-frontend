@@ -52,7 +52,7 @@ export const Login = () => {
             <input
               id='password_input'
               className={s.password_input}
-              type="text"
+              type="password"
               {...register('password', { required: 'Please enter password' })}
             />
             <label htmlFor="password_input">{errors.password?.message}</label>

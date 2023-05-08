@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { FullAnnounce, Home, Login, Profile, Registration, Announcements } from './pages/index.js'
+import { FullAnnounce, Home, Login, Profile, Registration, Announcements, AddAnnounce } from './pages/index.js'
 import Header from './components/Header/Header.jsx'
 import { useDispatch, useSelector } from "react-redux";
 import React from "react";
@@ -25,6 +25,7 @@ const App = () => {
         <Route path="/profile" element={<Profile />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/announcements" element={<Announcements/>} />
+        <Route path="/add-announce" element={<AddAnnounce />} />
       </Routes>
     </>
   )
