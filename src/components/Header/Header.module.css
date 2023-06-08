@@ -1,5 +1,7 @@
 header{
-    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 span{
     margin: 5px;
@@ -7,5 +9,21 @@ span{
 }
 
 a{
+    font-size: 24px;
     text-decoration: none;
+    color: black;
+}
+
+.logo{
+    width: 75px;
+    border-radius: 50%;
+}
+
+.logout{
+    background-color: transparent;
+    padding: 10px 25px;
+    font-size: 24px;
+    border-radius: 10%;
+    border-style: none;
+    border: 1px #3b8387 solid;
 }

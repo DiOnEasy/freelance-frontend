@@ -63,9 +63,6 @@ export const Registration = () => {
             type="password"
           />
           <label htmlFor="email_input">{errors.password?.message}</label>
-
-          <label htmlFor="avatar_input">Avatar:</label>
-          <input id='avatar_input' className={s.avatarURL_input} type="text" />
           <button type='submit' >Register</button>
         </form>
       </div>

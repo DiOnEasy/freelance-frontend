@@ -22,7 +22,7 @@ const Header = () => {
     <>
       <header>
         <span>
-        <img src="" alt="logo" />
+        <img className={s.logo} src="/logo (2).png" alt="logo" />
         </span>
         <span><Link to='/'>Home</Link></span>
         <span><Link to='/announcements'>Announcements</Link></span>
@@ -31,8 +31,9 @@ const Header = () => {
           isAuth
           ?
           <>
+          <span><Link to='/my-orders'>My orders</Link></span>
           <span><Link to='/add-announce'>Create announce</Link></span>
-          <span ><button onClick={onClickLogout}>Logout</button></span>
+          <span ><button className={s.logout} onClick={onClickLogout}>Logout</button></span>
           </>
         :
         <>

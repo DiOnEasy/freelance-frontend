@@ -1,10 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "../../axios";
 
-export const fetchAnnouncements = createAsyncThunk('posts/fetchPosts', async()=>{
+export const fetchAnnouncements = createAsyncThunk('announcements/fetchAnnouncements', async()=>{
     const {data} = await axios.get('/announcements');
     return data;
 })
+
+export const fetchRemoveAnnounce = createAsyncThunk('announce/fetchRemoveAnnounce', async(id) =>
+axios.delete(`/announce/${id}`),
+);
 
 const initialState = {
     announcements: {
@@ -18,6 +22,8 @@ const announcementsSlice = createSlice({
     initialState,
     reducers:{},
     extraReducers:{
+        // get announcements
+
         [fetchAnnouncements.pending]: (state) =>{
             state.announcements.items = [];
             state.announcements.status = 'loading';
@@ -29,6 +35,12 @@ const announcementsSlice = createSlice({
         [fetchAnnouncements.rejected]: (state) =>{
             state.announcements.items = [];
             state.announcements.status = 'error';
+        },
+
+        // remove announce
+
+        [fetchRemoveAnnounce.pending]: (state, action) =>{
+            state.announcements.items = state.announcements.items.filter(obj => obj._id !== action.meta.arg)
         },
     }
 })

@@ -1,0 +1,40 @@
+.announce_wrapper{
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+.announce_title{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.announce_text{
+    font-size: 18px;
+    width: 90%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.buttons{
+    float: right;
+}
+
+.remove_button{
+    border-style: none;
+    font-size: 18px;
+    color: red;
+}
+
+.edit_button{
+    color: #3b8387;
+}
+
+.read__more{
+    color: #002a2b;
+}

@@ -4,6 +4,6 @@ export { Profile } from './Profile/Profile.jsx';
 export { Registration } from './Registration/Registration.jsx';
 export { Announcements } from './Announcements/Announcements.jsx';
 export { FullAnnounce } from './FullAnnounce/FullAnnounce.jsx';
-export { AddAnnounce } from './AddAnnounce/AddAnnounce.jsx'
+export { AddAnnounce } from './AddAnnounce/AddAnnounce.jsx';
 
 

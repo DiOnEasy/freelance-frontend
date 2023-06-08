@@ -1,0 +1,50 @@
+.full_announce_wrapper{
+    border: 1px solid #79a5b0;
+    width: 60%;
+    padding: 3% 2%;
+    margin: 1% 3%;
+    border-radius: 10px;
+}
+
+.task__name{
+    /* border-style: none; */
+    width: 25%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.announce__title{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.announce__text{
+    font-size: 20px;
+}
+
+.announce__info{
+    color: #002b2e;
+    font-size: 18px;
+}
+
+
+.task__description{
+    /* border-style: none; */
+    width: 50%;
+    height: 500px;
+    display: block;
+    border-radius: 10px;
+
+}
+
+.full_announce_wrapper button, .modal__button{
+    border-style: none;
+    background-color:transparent;
+    padding: 1% 2%;
+    border: 1px solid #79a5b0;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
