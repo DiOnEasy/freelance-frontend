@@ -60,6 +60,7 @@ export const FullAnnounce = () => {
   const submitOffer = async () => {
     try {
       await axios.post('/task', fields)
+      await axios.post('/chat', fields)
 
       navigate(`/announcements`)
     }

@@ -1,12 +1,16 @@
 import s from './Profile.module.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Announce } from '../../components/Announce/Announce';
 import { useState } from 'react';
 import ReactModal from 'react-modal';
 import axios from '../../axios';
 import React from 'react';
+import { fetchAnnouncements } from '../../redux/slices/announcements';
+
 
 export const Profile = () => {
+  const dispatch = useDispatch();
+
 
   const announcements = useSelector(state => state.announcements.announcements);
   const { userData } = useSelector(state => state.auth.data)
@@ -61,6 +65,12 @@ export const Profile = () => {
 
   }
 
+  const isAnnouncementsLoading = announcements.status === 'loading';
+
+    React.useEffect(() => {
+        dispatch(fetchAnnouncements())
+    }, [])
+
   return (
     <>
 
@@ -93,6 +103,9 @@ export const Profile = () => {
       <div className={s.announce}>
 
         {
+          isAnnouncementsLoading ?
+          <p>Loading...</p>
+          :
           (announcements.items).filter(announce => announce.user._id === userData?._id).map((announce, index) =>
           (
             <Announce

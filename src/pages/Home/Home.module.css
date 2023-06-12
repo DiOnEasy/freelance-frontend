@@ -1,0 +1,18 @@
+.home__wrapper{
+    text-align: center;
+    font-size: 24px;
+}
+
+img{
+    width: 500px;
+    margin: 25px auto 0;
+    display: block;
+}
+
+.home__wrapper p{ 
+    margin: 25px auto;
+    width: 50%;
+}
+.home__wrapper p:nth-child(3){ 
+color: #026b69;
+}

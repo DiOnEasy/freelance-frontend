@@ -11,7 +11,7 @@ import { ProfileSideBar } from '../../components/ProfileSideBar/ProfileSideBar';
 export const Announcements = () => {
     const dispatch = useDispatch();
     const announcements = useSelector(state => state.announcements.announcements);
-    const { userData } = useSelector(state => state.auth.data)
+    const { userData } = useSelector(state => state?.auth?.data)
 
 
     console.log(announcements)
@@ -21,7 +21,7 @@ export const Announcements = () => {
     React.useEffect(() => {
         dispatch(fetchAnnouncements())
     }, [])
-
+   
 
 
     return (

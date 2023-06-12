@@ -1,10 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import { FullAnnounce, Home, Login, Profile, Registration, Announcements, AddAnnounce } from './pages/index.js'
+import { Chat, MyOrders, FullAnnounce, Home, Login, Profile, Registration, Announcements, AddAnnounce } from './pages/index.js'
 import Header from './components/Header/Header.jsx'
 import { useDispatch, useSelector } from "react-redux";
 import React from "react";
 import { fetchAuthMe, selectIsAuth } from "./redux/slices/auth.js";
-import { MyOrders } from "./pages/MyOrders/MyOrders.jsx";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -36,6 +35,7 @@ const App = () => {
         <Route path="/announcements" element={<Announcements />} />
         <Route path="/add-announce" element={<AddAnnounce />} />
         <Route path="/my-orders" element={<MyOrders />} />
+        <Route path="/chat/:id?" element={<Chat />} />
       </Routes>
     </>
   )
