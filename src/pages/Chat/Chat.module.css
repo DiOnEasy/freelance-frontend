@@ -4,6 +4,15 @@
     overflow-y: scroll;
 }
 
+.sidebar::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+  }
+
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
 .chat__wrapper {
     display: flex;
 }

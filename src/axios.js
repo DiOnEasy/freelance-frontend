@@ -8,7 +8,7 @@ const instance = axios.create({
 //function to check if the user is authorized every time the page is refreshed
 instance.interceptors.request.use((config) =>{
 config.headers.Authorization = window.localStorage.getItem('token');
-
+    console.log(config)
 return config;
 })
 
